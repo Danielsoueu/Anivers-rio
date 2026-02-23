@@ -1,51 +1,45 @@
 import React from 'react';
-import { UtensilsCrossed, Sparkles } from 'lucide-react';
+import { Star } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <div className="text-center pt-10 pb-6 px-4 w-full relative z-10">
+    <div className="text-center w-full relative z-10 flex flex-col items-center">
       
-      {/* Decorative Top Badge */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 bg-red-600 text-white px-8 py-1 font-display tracking-widest shadow-[4px_4px_0px_rgba(0,0,0,0.5)] rotate-[-2deg] z-20">
-        CONVITE OFICIAL
+      {/* BADGE "Aniversário do" */}
+      <div className="relative mb-2">
+        <div className="bg-[#FFC107] text-[#1a1a1a] px-8 py-2 rounded-xl border-4 border-[#1a1a1a] shadow-[0_4px_0_rgba(255,255,255,0.2)] transform -rotate-2 relative z-10">
+          {/* Badge details */}
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 flex gap-1">
+             <div className="w-1 h-3 bg-[#1a1a1a]"></div>
+             <div className="w-1 h-3 bg-[#1a1a1a]"></div>
+             <div className="w-1 h-3 bg-[#1a1a1a]"></div>
+          </div>
+
+          <div className="flex flex-col items-center">
+             <div className="flex gap-2 text-[#1a1a1a] mb-1">
+               <Star size={12} fill="currentColor" />
+               <Star size={12} fill="currentColor" />
+               <Star size={12} fill="currentColor" />
+             </div>
+             <h2 className="font-hand text-3xl font-bold leading-none transform -rotate-2">
+               Aniversário do
+             </h2>
+          </div>
+        </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center">
-        
-        {/* Main Title Block */}
-        <div className="relative mt-8 mb-4 transform rotate-1">
-          <h2 className="text-3xl font-display text-white/90 tracking-widest mb-0 drop-shadow-md">
-            CHURRASCO DO
-          </h2>
-          <h1 className="text-7xl md:text-8xl font-display text-orange-500 tracking-tighter leading-[0.85] drop-shadow-[5px_5px_0px_rgba(0,0,0,1)] stroke-black">
-            LUCAS
-          </h1>
-          <div className="absolute -right-4 top-0 text-yellow-400 animate-pulse">
-            <Sparkles size={32} />
-          </div>
-        </div>
+      {/* MAIN NAME */}
+      <h1 className="text-7xl md:text-8xl font-display text-[#FFFDD0] uppercase tracking-wide drop-shadow-[4px_4px_0px_#000] mb-6 mt-2 leading-[0.9]">
+        LUCAS
+      </h1>
 
-        {/* Subtitle / Theme */}
-        <div className="bg-white/10 backdrop-blur-sm border-2 border-dashed border-white/30 rounded-xl px-6 py-2 transform -rotate-2 mb-8">
-           <p className="font-display text-xl text-white tracking-wider flex items-center gap-2">
-             <UtensilsCrossed size={20} />
-             ADEGA • RESENHA • FUMAÇA
-           </p>
-        </div>
-
-        {/* Date & Time Ticket */}
-        <div className="flex flex-wrap justify-center gap-4">
-          <div className="bg-[#2a2a2a] border-2 border-white/20 p-3 rounded shadow-[4px_4px_0px_black] min-w-[120px]">
-            <span className="block text-xs font-sans text-neutral-400 uppercase">Quando?</span>
-            <span className="block font-display text-3xl text-white">28/02</span>
-          </div>
-          <div className="bg-[#2a2a2a] border-2 border-white/20 p-3 rounded shadow-[4px_4px_0px_black] min-w-[100px]">
-             <span className="block text-xs font-sans text-neutral-400 uppercase">Hora?</span>
-             <span className="block font-display text-3xl text-yellow-500">22H</span>
-          </div>
-        </div>
-
+      {/* INVITE TEXT */}
+      <div className="max-w-xs mx-auto mb-8">
+        <p className="font-hand text-2xl md:text-3xl text-white/90 leading-tight transform rotate-1 text-shadow-sm">
+          Venha comemorar meu aniversário com muita alegria, risadas, cerveja, amigos e comidas de Buteco!
+        </p>
       </div>
+
     </div>
   );
 };

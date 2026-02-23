@@ -5,28 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Churrasco de Aniversário 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kaushan+Script&family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
           extend: {
             fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              display: ['Permanent Marker', 'cursive'],
+              sans: ['Roboto', 'sans-serif'],
+              display: ['Alfa Slab One', 'cursive'],
+              hand: ['Kaushan Script', 'cursive'],
+              condensed: ['Bebas Neue', 'sans-serif'],
             },
             colors: {
-              ember: {
-                50: '#fff7ed',
-                100: '#ffedd5',
-                200: '#fed7aa',
-                300: '#fdba74',
-                400: '#fb923c',
-                500: '#f97316',
-                600: '#ea580c',
-                700: '#c2410c',
-                800: '#9a3412',
-                900: '#7c2d12',
+              buteco: {
+                yellow: '#FFC107',
+                dark: '#1a1a1a',
+                cream: '#FEF3C7',
               }
+            },
+            boxShadow: {
+              'hard': '4px 4px 0px 0px rgba(0,0,0,1)',
             }
           },
         },
@@ -36,6 +34,9 @@
       body {
         background-color: #1a1a1a;
         color: #f3f4f6;
+      }
+      .chalk-pattern {
+        background-image: url('https://www.transparenttextures.com/patterns/black-chalk.png');
       }
     </style>
   <script type="importmap">
